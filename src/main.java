@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 public class main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        System.out.print("i like pizza\n");
 //        System.out.print("it's really good");
 
@@ -182,6 +182,89 @@ public class main {
 //
 //
 //        scn.close();
+        Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+        int m = scn.nextInt();
+//        int count = 0;
+//        for(int i = 2; i<n/2; i++){
+//            if(n%i==0){
+//                count++;
+//            }
+//        }
+//        if(count !=0){
+//            System.out.println("not Prime");
+//        }
+//        else{
+//            System.out.println("Prime");
+//        }
+        // check for prime
+//        int count = 0;
+//        for(int i = 0; i<n;i++){
+//            for(int j =0; j<n;j++){
+////                System.out.println("hello nihal");
+//                System.out.print(i+" "+j);
+//                count++;
+//            }
+//            System.out.println(" ");
+//        }
+//        System.out.println(count);
 
+//        for(int i = 0; i<n; i++){
+//            for(int j=0;j<m; j++){
+//                System.out.print("* ");
+//            }
+//            System.out.println(" ");
+//        }
+
+//        for (int i = 0; i < n; i++) {
+//            for (int j = 0; j < m; j++) {
+//                if(j<=i){ //also work for (i>=j)
+//                    System.out.print("*");
+//                }
+//
+//            }
+//            System.out.println(" ");
+//        }
+
+//        for (int i = 0; i<n; i++){
+//            for(int j = 0; j<m; j++){
+//                if(i<=j){
+//                    System.out.print("*");
+//                }
+//            }
+//            System.out.println(" ");
+//        }
+
+//        for(int i = 1; i<=n; i++){
+//            for(int j = 1; j<=m; j++){
+//                if(i>=j){
+//                    System.out.print(j);
+//                }
+//
+//            }
+//            System.out.println(" ");
+//        }
+//        for(int i = 0; i<=n; i++){
+//            for(int j =0; j<=m;j++){
+//                if(i == 0 || i == n || j == 0 || j == m){
+//                    System.out.print(" * ");
+//                }
+//                else{
+//                    System.out.print("   ");
+//                }
+//            }
+//            System.out.println();
+//        }
+        for(int i = 0; i<=n; i++){
+            for (int j = 0; j<=m; j++){
+                if(i == 0 || i == n || j == 0 || j == m || i == j){
+                    System.out.print(" * ");
+                }
+                else{
+                    System.out.print("   ");
+                }
+            }
+            System.out.println(" ");
+        }
     }
 }
