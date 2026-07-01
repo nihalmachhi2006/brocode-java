@@ -183,8 +183,8 @@ public class main {
 //
 //        scn.close();
         Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
-        int m = scn.nextInt();
+//        int n = scn.nextInt();
+//        int m = scn.nextInt();
 //        int count = 0;
 //        for(int i = 2; i<n/2; i++){
 //            if(n%i==0){
@@ -201,7 +201,6 @@ public class main {
 //        int count = 0;
 //        for(int i = 0; i<n;i++){
 //            for(int j =0; j<n;j++){
-////                System.out.println("hello nihal");
 //                System.out.print(i+" "+j);
 //                count++;
 //            }
@@ -255,16 +254,50 @@ public class main {
 //            }
 //            System.out.println();
 //        }
-        for(int i = 0; i<=n; i++){
-            for (int j = 0; j<=m; j++){
-                if(i == 0 || i == n || j == 0 || j == m || i == j){
-                    System.out.print(" * ");
-                }
-                else{
-                    System.out.print("   ");
-                }
-            }
-            System.out.println(" ");
+//        for(int i = 0; i<=n; i++){
+//            for (int j = 0; j<=m; j++){
+//                if(i == 0 || i == n || j == 0 || j == m || i == j){
+//                    System.out.print(" * ");
+//                }
+//                else{
+//                    System.out.print("   ");
+//                }
+//            }
+//            System.out.println(" ");
+
+//        String n = scn.nextLine();
+//        int count =0;
+//        for(int i = 0; i<n.length(); i++){
+//            for(int j=0;j<n.length();j++){
+//                if(i == j){
+//                    System.out.println(n);
+//                }
+//                count++;
+//            }
+//        }
+//        System.out.println(count);
+//        for (int i = 0; i <= n.length(); i++) {
+//            for (int j = 0; j <= n.length(); j++) {
+//                System.out.print(n.charAt((i)));
+//            }
+//            System.out.println(" ");
+//        }
+
+
+//        for (int i = 0; i <= n.length(); i++) {
+//            for (int j = 0; j <= n.length(); j++) {
+//                if (i >= j) {
+//                    System.out.print(n.charAt(j));
+//                }
+//            }
+//            System.out.println(" ");
+//        }
+
+        int n = 4;
+        for(int i = 0; i<n; i++){
+            
         }
+
     }
 }
+
