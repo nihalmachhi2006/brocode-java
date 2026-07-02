@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.util.Random;
+import java.math.*;
 public class main {
+
     public static void main(String[] args) {
 //        System.out.print("i like pizza\n");
 //        System.out.print("it's really good");
@@ -183,6 +185,9 @@ public class main {
 //
 //        scn.close();
         Scanner scn = new Scanner(System.in);
+        int n = scn.nextInt();
+//        checkforzerro(n);/
+        System.out.println(checkforzerro(n));
 //        int n = scn.nextInt();
 //        int m = scn.nextInt();
 //        int count = 0;
@@ -293,11 +298,8 @@ public class main {
 //            System.out.println(" ");
 //        }
 
-        int n = 4;
-        for(int i = 0; i<n; i++){
-            
-        }
-
+    }
+    public static boolean checkforzerro(int n) {
+        return (Math.abs(n) / 10) % 10 == 0;
     }
 }
-
