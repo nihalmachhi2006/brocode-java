@@ -184,10 +184,7 @@ public class main {
 //
 //
 //        scn.close();
-        Scanner scn = new Scanner(System.in);
-        int n = scn.nextInt();
-//        checkforzerro(n);/
-        System.out.println(checkforzerro(n));
+
 //        int n = scn.nextInt();
 //        int m = scn.nextInt();
 //        int count = 0;
@@ -298,8 +295,31 @@ public class main {
 //            System.out.println(" ");
 //        }
 
+        Scanner scn = new Scanner(System.in);
+//        int n = scn.nextInt();
+
+        int ans = ncr(5,6);
+//        int ans = factorial(n);
+        System.out.println(ans);
+
     }
-    public static boolean checkforzerro(int n) {
-        return (Math.abs(n) / 10) % 10 == 0;
+//    public static boolean checkforzerro(int n) {
+//        return (Math.abs(n) / 10) % 10 == 0;
+//    }
+
+    static int factorial(int n) {
+        int ans = 1;
+        if (n == 1) {
+            return 1;
+        }
+        for (int i = 1; i <= n; i++) {
+            ans = ans * i;
+        }
+        return ans;
+    }
+    static int ncr(int n,int r ) {
+
+        int ans = factorial(n) / factorial(r) * factorial(n-r);
+        return ans;
     }
 }
