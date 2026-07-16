@@ -13,7 +13,7 @@ public class array {
             }
             else if(arr[i] != maxsum && arr[i] > currsum){
                     currsum = arr[i];
-                }
+            }
         }
         System.out.println(currsum);
     }
