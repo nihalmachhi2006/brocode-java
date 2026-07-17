@@ -84,7 +84,13 @@ public class arrays2d {
 
         for(int i = 0; i<ans.length; i++){
             for(int j = 0; j<ans.length; j++){
-                System.out.print(ans[j][i]+ " ");
+                if(j%2  == 0){
+                    System.out.print(ans[j][i]+ " ");
+                }
+                else{
+                    System.out.print(ans[j][i]+ " ");
+                }
+
             }
             System.out.println(" ");
         }
