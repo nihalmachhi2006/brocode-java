@@ -1,20 +1,28 @@
 import java.util.*;
 
-//class sum{
-//    int add(int a, int b){
-//        return a+b;
-//    }
-//    int add(int a, int b, int c){
-//        return a+b+c;
-//    }
-//}
-
+class animal{
+    void sound(){
+        System.out.println("someting make sound");
+    }
+}
+class dog extends animal{
+    void sound(){
+        System.out.println("dog is dark");
+    }
+}
+class cat extends animal{
+    void sound(){
+        System.out.println("cat is dark");
+    }
+}
 
 class main{
     public static void main(String[] args){
-//        System.out.println("Starting OOPS ");
-//         sum sm = new sum();
-//        System.out.println(sm.add(10,20));
-//        System.out.println(sm.add(10,20,30));
+        animal a;
+
+        a = new dog();
+        a.sound();
+        a = new cat();
+        a.sound();
     }
 }
