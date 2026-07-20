@@ -1,37 +1,34 @@
 import java.util.*;
 public class p1 {
     public static void main(String[] args){
-//        int[] arr = {10,20,30,10,10,30};
-//        boolean[] check = new boolean[arr.length];
-//
-//        int n = arr.length;
-//        for(int i  =0; i<n; i++){
-//            if(!check[i]){
-//                int count = 1;
-//                for(int j=i+1; j<n; j++){
-//                    if(arr[i] == arr[j]){
-//                        count = count + 1;
-//                        check[j] = true;
-//                    }
-//                }
-//                System.out.println("the current element " + arr[i] +" count is " +count);
-//            }
-//        }
-        int[] arr = {10,20,30,10,10,30};
-        int n = arr.length;
-        for(int i = 0; i< n; i++){
-            int count = 1;
-            for(int j=i+1; j<n;j++){
-                if(arr[i] == arr[j]){
-                    count++;
-                }
+        Scanner scn = new Scanner(System.in);
+
+
+
+        int rows = scn.nextInt();
+        int col = scn.nextInt();
+        int[][] ans = new int[col][rows];
+
+
+        for(int i = 0; i<col; i++){
+            for(int j = 0; j<rows; j++){
+                ans[i][j] = scn.nextInt();
 
             }
-            if(count >= n/2){
-                System.out.println("the n/2 conditon is true count is "+ count);
+        }
+        int n = ans.length;
+
+        for(int i = 0; i< n; i++){
+            for(int j = 0; j<n; j++){
+                System.out.print(ans[j][i] + " ");
             }
+            System.out.println(" ");
         }
 
 
     }
 }
+
+
+
+
