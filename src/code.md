@@ -173,3 +173,131 @@ public static void main(String[] args) {
 
 
 }
+
+[//]: # (Exit Point in a Matrix)
+
+[//]: # ()
+[//]: # ()
+[//]: # (class Solution {)
+
+[//]: # (public List<Integer> exitPoint&#40;int[][] mat&#41; {)
+
+[//]: # (// code here)
+
+[//]: # (int n = mat.length;)
+
+[//]: # (int m = mat[0].length;)
+
+[//]: # (int row = 0;)
+
+[//]: # (int col = 0;)
+
+[//]: # ()
+[//]: # (        int dir = 0; )
+
+[//]: # (        )
+[//]: # (        int lastRow = 0;)
+
+[//]: # (        int lastCol = 0;)
+
+[//]: # (        )
+[//]: # (        List<Integer> ans = new ArrayList<>&#40;&#41;;)
+
+[//]: # (        )
+[//]: # (        while &#40;row >= 0 && row < n && col >= 0 && col < m&#41; {)
+
+[//]: # (            lastRow = row;)
+
+[//]: # (           lastCol = col;)
+
+[//]: # (            )
+[//]: # (             if &#40;mat[row][col] == 1&#41; {)
+
+[//]: # (                mat[row][col] = 0;)
+
+[//]: # (                dir = &#40;dir + 1&#41; % 4;)
+
+[//]: # (           })
+
+[//]: # (              )
+[//]: # (            if &#40;dir == 0&#41; {)
+
+[//]: # (                  col++;)
+
+[//]: # (           } else if &#40;dir == 1&#41; {)
+
+[//]: # (                row++;)
+
+[//]: # (            } else if &#40;dir == 2&#41; {)
+
+[//]: # (                col--;)
+
+[//]: # (             } else if &#40;dir == 3&#41; {)
+
+[//]: # (                row--;)
+
+[//]: # (           })
+
+[//]: # (            )
+[//]: # (              ans.add&#40;lastRow,lastCol&#41;;)
+
+[//]: # (     })
+
+[//]: # (        )
+[//]: # (       return ans;)
+
+[//]: # (    })
+
+[//]: # (})
+
+[//]: # (Boolean Matrix)
+
+[//]: # ()
+[//]: # (class Solution {)
+
+[//]: # (void booleanMatrix&#40;int mat[][]&#41; {)
+
+[//]: # (int rows = mat.length;)
+
+[//]: # (int cols = mat[0].length;)
+
+[//]: # ()
+[//]: # (        boolean[] rowm = new boolean[rows];)
+
+[//]: # (        boolean[] colm = new boolean[cols];)
+
+[//]: # (        )
+[//]: # (        for &#40;int i = 0; i < rows; i++&#41; {)
+
+[//]: # (            for &#40;int j = 0; j < cols; j++&#41; {)
+
+[//]: # (                if &#40;mat[i][j] == 1&#41; {)
+
+[//]: # (                    rowm[i] = true;)
+
+[//]: # (                    colm[j] = true;)
+
+[//]: # (                })
+
+[//]: # (            })
+
+[//]: # (        })
+
+[//]: # (        )
+[//]: # (        for &#40;int i = 0; i < rows; i++&#41; {)
+
+[//]: # (            for &#40;int j = 0; j < cols; j++&#41; {)
+
+[//]: # (                if &#40;rowm[i] || colm[j]&#41; {)
+
+[//]: # (                    mat[i][j] = 1;)
+
+[//]: # (                })
+
+[//]: # (            })
+
+[//]: # (        })
+
+[//]: # (    })
+
+[//]: # (})
