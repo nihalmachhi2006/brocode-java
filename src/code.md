@@ -301,3 +301,36 @@ public static void main(String[] args) {
 [//]: # (    })
 
 [//]: # (})
+
+
+[//]: # (public class Main {)
+
+[//]: # (public static void main&#40;String[] args&#41; {)
+
+[//]: # (for&#40;int i = 0 ; i < n; i++&#41;{)
+
+[//]: # (// spaces)
+
+[//]: # (for&#40;int j = 0 j < n - i - 1 ; j++&#41;{)
+
+[//]: # (System.out.print&#40;" "&#41;;)
+
+[//]: # (})
+
+[//]: # (//stars)
+
+[//]: # (for&#40;int k = 0 ; k <= i; k++&#41;{)
+
+[//]: # (System.out.print&#40;"*"&#41;;)
+
+[//]: # (})
+
+[//]: # (for&#40;int a = 1 ; a <= i; a++&#41;{)
+
+[//]: # (System.out.print&#40;"* "&#41;;)
+
+[//]: # (})
+
+[//]: # (System.out.println&#40;&#41;;)
+
+[//]: # (})
