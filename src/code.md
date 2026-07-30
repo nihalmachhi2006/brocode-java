@@ -334,3 +334,28 @@ public static void main(String[] args) {
 [//]: # (System.out.println&#40;&#41;;)
 
 [//]: # (})
+
+[//]: # ()
+[//]: # (import java.util.*;)
+
+[//]: # (public class Main {)
+
+[//]: # (public static void main&#40;String[] args&#41; {)
+
+[//]: # (int n = 5 ;)
+
+[//]: # (for&#40;int i = 0 ; i < n; i++&#41;{)
+
+[//]: # (for&#40;int k = 0 ; k < n-i; k++&#41;{)
+
+[//]: # (System.out.print&#40;"* "&#41;;)
+
+[//]: # (})
+
+[//]: # (System.out.println&#40;&#41;;)
+
+[//]: # (})
+
+[//]: # (})
+
+[//]: # (})
