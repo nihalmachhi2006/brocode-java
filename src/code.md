@@ -361,3 +361,45 @@ public static void main(String[] args) {
 [//]: # (})
 
 [//]: # (The pattenr is almost finsited )
+
+import java.util.*;
+
+public class Main {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int n = sc.nextInt();
+
+      //upper half
+      for(int i = 0; i < n; i++){
+        // 1st
+        //spaces
+        for(int a = 0; a <= i; a++){
+          System.out.print("  ");
+        }
+        //stars
+        for(int b = 0; b < n-i; b++){
+          System.out.print("* ");
+        }
+        //2nd 
+        for(int c = 0; c < n-i-1; c++){
+          System.out.print("* ");
+        }
+        System.out.println();
+      }
+      //lower half
+      for(int i = 1; i < n; i++){
+        //spaces
+        for(int j = 0; j <= n-i-1; j++){
+          System.out.print("  ");
+        }
+        //stars
+        for(int k = 0; k <= i; k++){
+          System.out.print("* ");
+        }
+        for(int l = 0; l < i; l++){
+          System.out.print("* ");
+        }
+        System.out.println();
+      }
+    }
+}

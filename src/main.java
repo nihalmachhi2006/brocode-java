@@ -12,14 +12,25 @@ public class main {
                 ans[i][j] = scn.nextInt();
             }
         }
-
-        for(int i = 0; i<ans.length; i++){
-            for(int j = 0; j<ans.length; j++){
-                if(j <= i){
-                    System.out.print("*"+" ");
-                }
+        int i, j;
+//        for (i = 1; i <= n; i++) {
+//            for (j = 1; j < i; j++) {
+//                System.out.print(" ");
+//            }
+//            for (j = i; j <= n; j++) {
+//                System.out.print("* ");
+//            }
+//            System.out.println();
+//        }
+        for (i = n - 1; i >= 1; i--) {
+            for (j = 1; j < i; j++) {
+                System.out.print(" ");
             }
-            System.out.println(" ");
+            for (j = i; j <= n; j++) {
+                System.out.print("* ");
+            }
+
+            System.out.println();
         }
     }
 }
