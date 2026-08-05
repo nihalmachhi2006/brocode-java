@@ -1,39 +1,27 @@
 import java.util.*;
 
-public class main {
-    public static void main(String[] args){
-        Scanner scn = new Scanner(System.in);
-        int n  = scn.nextInt();
-        int m = scn.nextInt();
-
-        int[][] ans = new int[n][m];
-        for(int i = 0; i<ans.length; i++){
-            for(int j = 0; j<ans.length; j++){
-                ans[i][j] = scn.nextInt();
+class Main {
+    public static void selectionSort(int n, int[] arr){
+        for(int i = 0; i < n-1; i++){
+            int min = i;
+            for(int j = i+1; j < n; j++){
+                if(arr[min] > arr[j]){
+                    min = j;
+                }
             }
+
+            int temp = arr[i];
+            arr[i] = arr[min];
+            arr[min] = temp; 
         }
-        int i, j;
-//        for (i = 1; i <= n; i++) {
-//            for (j = 1; j < i; j++) {
-//                System.out.print(" ");
-//            }
-//            for (j = i; j <= n; j++) {
-//                System.out.print("* ");
-//            }
-//            System.out.println();
-//        }
-        for (i = n - 1; i >= 1; i--) {
-            for (j = 1; j < i; j++) {
-                System.out.print(" ");
-            }
-            for (j = i; j <= n; j++) {
-                System.out.print("* ");
-            }
+    }
 
-            System.out.println();
+    public static void main(String[] args) {
+        int n = 5;
+        int[] arr = {64,22, 34, 11, 12};
+        selectionSort(n, arr);
+        for(int elem : arr){
+            System.out.print(elem + " ");
         }
     }
 }
-
-
-//10 20 30 40 50 60 70 80 90
